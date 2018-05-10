@@ -1,7 +1,4 @@
-//Team Something -- Clarence Cheng, Kevin Lin
-//APCS2 Pd1
-//HW46 -- Arrr, There Be Priorities Here Matey . . .
-//2018-05-10
+//Team Cycloid: Clarence Cheng, Leon Li
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
@@ -18,17 +15,17 @@ public class ArrayPriorityQueue implements PriorityQueue{
 
   public String peekMin() {
     if (isEmpty()) throw new NoSuchElementException("Empty queue");//Throws exception if empty
-    return _data.get(0);//Return front element
+    return _data.get(_data.size()-1);//Return front element
   }
 
   public String removeMin() {
     if (isEmpty()) throw new NoSuchElementException("Empty queue");//Throws exception if empty
-    return _data.remove(0);//Remove and return front elm
+    return _data.remove(_data.size()-1);//Remove and return front elm
   }
 
   public void add(String input) {
     for (int i = 0; i < _data.size(); i++) {//Traverse queue
-      if (input.compareTo( _data.get(i) ) < 0) {//Check if position i is a valid insertion point
+      if (input.compareTo( _data.get(i) ) >= 0) {//Check if position i is a valid insertion point
         _data.add(i,input);
         return;
       }

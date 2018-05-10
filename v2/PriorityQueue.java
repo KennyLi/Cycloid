@@ -1,4 +1,4 @@
-public class PriorityQueue {
+public interface PriorityQueue {
     //returns true if queue is empty
     public boolean isEmpty();
 

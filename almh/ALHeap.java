@@ -16,7 +16,8 @@ public class ALHeap
    * default constructor  ---  inits empty heap
    *****************************************************/
   public ALHeap() 
-  { 
+  {
+      _heap = new ArrayList<Integer>;
   }
 
 
@@ -28,8 +29,13 @@ public class ALHeap
    * b) ASCII representation of the tree (more complicated, more fun)
    *****************************************************/
   public String toString() 
-  { 
-  }//O(?)
+  {
+      String retStr = "";
+      for(int i: _heap) {
+	  retStr += i;
+      }
+      return retStr;
+  }//O(N)
 
 
   /*****************************************************
@@ -37,8 +43,9 @@ public class ALHeap
    * Returns true if no meaningful elements in heap, false otherwise
    *****************************************************/
   public boolean isEmpty()
-  { 
-  }//O(?)
+  {
+      return _heap.size() == 0;
+  }//O(1)
 
 
   /*****************************************************
@@ -47,8 +54,9 @@ public class ALHeap
    * Postcondition: Heap remains unchanged.
    *****************************************************/
   public Integer peekMin()
-  { 
-  }//O(?)
+  {
+      return _heap[0];
+  }//O(1)
 
 
   /*****************************************************
@@ -78,7 +86,14 @@ public class ALHeap
    * Postcondition: Tree unchanged
    *****************************************************/
   private int minChildPos( int pos )
-  { 
+  {
+      if (pos >= arrayList.size()) {
+	  return null;
+      } else if (((pos * 2 + 1) >= _heap.size()) && ((pos * 2 + 2) >= _heap.size())) {
+	  return -1;
+      } else {
+	  //if arrayList[pos * 2 + 1]
+	  
   }//O(?)
   
 

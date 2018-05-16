@@ -7,3 +7,12 @@ We decided to use the code that was the most efficient in terms of run time. Thi
 * isEmpty() - O(1)
 * peekMin() - O(1)
 * removeMin() - O(1)
+
+### heap todo
+[x] ALHeap()
+[x] isEmpty()
+[x] peekMin()
+[x] toString()
+[x] add(addVal)
+[x] minChildPos(pos)
+[x] removeMin()

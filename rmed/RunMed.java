@@ -1,3 +1,8 @@
+/* Cycloid (Clarence Cheng, Kenny Li, Cheryl Qian)
+APCS2 pd1
+HW50 -- Run Run Run
+2018-05-18 */
+
 import java.util.NoSuchElementException;
 
 public class RunMed

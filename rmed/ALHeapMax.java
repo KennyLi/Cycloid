@@ -1,3 +1,8 @@
+/* Cycloid (Clarence Cheng, Kenny Li, Cheryl Qian)
+APCS2 pd1
+HW50 -- Run Run Run
+2018-05-18 */
+
 /*****************************************************
  * class ALHeap
  * SKELETON
@@ -161,7 +166,7 @@ public class ALHeapMax
    *****************************************************/
   private int maxChildPos( int pos )
   { 
-  	int retVal;
+	int retVal;
 	int lc = 2*pos + 1; //index of left child
 	int rc = 2*pos + 2; //index of right child
 

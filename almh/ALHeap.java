@@ -1,3 +1,7 @@
+/* Cycloid (Clarence Cheng, Kenny Li, Cheryl Qian)
+APCS2 PD1
+Hw49 -- Sink || Swim
+2018/05/16 */
 /*****************************************************
  * class ALHeap
  * SKELETON
